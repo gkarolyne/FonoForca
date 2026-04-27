@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FonoApp /R/</title>
+<title>FonoForca</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <div id="login-screen" class="center">
-    <h2>🧠 FonoApp</h2>
+    <h2>FonoForca</h2>
     <input type="text" id="username" placeholder="Nome do paciente">
     <button onclick="login()">Entrar</button>
 </div>
@@ -24,16 +24,18 @@
 
     <div class="container">
 
-        <div class="card">
+        <!-- NÍVEL -->
+        <div class="card center">
             <select id="level">
-                <option value="inicio">R início</option>
-                <option value="meio">R meio</option>
-                <option value="final">R final</option>
-                <option value="encontro">Encontro</option>
+                <option value="inicio">R no início</option>
+                <option value="meio">R no meio</option>
+                <option value="final">R no final</option>
+                <option value="encontro">Encontro consonantal</option>
             </select>
-            <button onclick="startGame()">Novo jogo</button>
+            <button onclick="startGame()">🎮 Novo jogo</button>
         </div>
 
+        <!-- FORCA -->
         <div class="card center">
             <div id="hangman"></div>
             <div id="word"></div>
@@ -42,22 +44,27 @@
             <div id="message"></div>
         </div>
 
+        <!-- LETRAS -->
         <div class="card">
             <div id="letters"></div>
         </div>
 
+        <!-- VOZ -->
         <div class="card center">
             <button onclick="startRecording()">🎤 Gravar</button>
             <button onclick="playAudio()">▶️ Ouvir</button>
         </div>
 
-        <div class="card progress">
-            <div>⭐ <span id="xp">0</span> XP</div>
-            <div>🔥 <span id="streak">0</span> dias</div>
+        <!-- PROGRESSO -->
+        <div class="card">
+            <h3>📊 Evolução do paciente</h3>
+            <p>⭐ XP: <span id="xp">0</span></p>
+            <p>🎯 Acertos: <span id="hits">0</span></p>
+            <p>❌ Erros: <span id="miss">0</span></p>
+            <p>📈 Tentativas: <span id="tries">0</span></p>
         </div>
 
     </div>
-
 </div>
 
 <script src="script.js"></script>

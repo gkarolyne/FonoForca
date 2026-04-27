@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FonoApp /R/</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="login-screen" class="center">
+    <h2>🧠 FonoApp</h2>
+    <input type="text" id="username" placeholder="Nome do paciente">
+    <button onclick="login()">Entrar</button>
+</div>
+
+<div id="app" style="display:none">
+
+    <div class="header">
+        <span id="userDisplay"></span>
+        <button onclick="logout()">Sair</button>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <select id="level">
+                <option value="inicio">R início</option>
+                <option value="meio">R meio</option>
+                <option value="final">R final</option>
+                <option value="encontro">Encontro</option>
+            </select>
+            <button onclick="startGame()">Novo jogo</button>
+        </div>
+
+        <div class="card center">
+            <div id="hangman"></div>
+            <div id="word"></div>
+            <div id="hint"></div>
+            <p>Erros: <span id="errors">0</span>/6</p>
+            <div id="message"></div>
+        </div>
+
+        <div class="card">
+            <div id="letters"></div>
+        </div>
+
+        <div class="card center">
+            <button onclick="startRecording()">🎤 Gravar</button>
+            <button onclick="playAudio()">▶️ Ouvir</button>
+        </div>
+
+        <div class="card progress">
+            <div>⭐ <span id="xp">0</span> XP</div>
+            <div>🔥 <span id="streak">0</span> dias</div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

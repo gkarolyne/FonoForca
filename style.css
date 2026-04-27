@@ -1,0 +1,62 @@
+body {
+    margin:0;
+    font-family: Arial;
+    background: #f5f3ff;
+}
+
+.center {
+    text-align:center;
+    margin-top:50px;
+}
+
+input {
+    padding:10px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+button {
+    background:#8b5cf6;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:10px;
+    margin:5px;
+}
+
+.header {
+    background:#7c3aed;
+    color:white;
+    padding:10px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.container {
+    padding:10px;
+}
+
+.card {
+    background:white;
+    padding:15px;
+    margin:10px;
+    border-radius:10px;
+}
+
+#letters {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#letters button {
+    background:#ddd;
+    color:black;
+}
+
+.success { background:green !important; color:white; }
+.danger { background:red !important; color:white; }
+
+.progress {
+    display:flex;
+    justify-content:space-around;
+}
